@@ -1,0 +1,85 @@
+main{
+    background: #ffdcd0;
+    font-family:  'Montserrat',
+    sans-serif;
+    ;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.text{
+    font-size: 40px;
+    font-weight: 600;
+    color: #0b032d;
+
+}
+
+.name_project{
+    font-size: 35;
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+/* @media screen and (max-width: 1700px) {
+
+    .card{
+        width: 30%;
+    }
+} */
+.card-deck{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    
+    
+}
+main{
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.card{
+    margin: 10px;
+    width: 33%;
+}
+
+.card-text{
+    text-decoration: none;
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 490px) {
+
+   .card-deck {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+
+
+   }
+
+   .card {
+       margin: 0px;
+
+       width: 100%;
+       margin-bottom: 10px;
+   }
+
+   .card-text {
+       text-decoration: none;
+       font-family: 'Montserrat',sans-serif;
+       font-size: 13px;
+   }
+}
+
+

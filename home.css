@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #0b032d;
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+.navbar {
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 500;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.text {
+    width: 29ch;
+    color: white;
+    font-family: monospace;
+    font-size: 35px;
+    white-space: nowrap;
+    /* не переносить текст на другую строку */
+    overflow: hidden;
+    /* скрываем переполнение контентом */
+    border-right: 3px solid white;
+    /* рисуем курсор */
+    animation: cursor 0.75s step-end infinite, printed_text 5s steps(29);
+}
+
+@keyframes cursor {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+@keyframes printed_text {
+    from {
+        width: 0;
+    }
+}
+
+.button-place {
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+
+}
+
+.textabout {
+    text-align: left;
+    color: aliceblue;
+    width: 80%;
+    position: relative;
+
+}
+
+.textabout p {
+    position: absolute;
+    left: 33%;
+
+}
+
+.button-place a {
+
+    padding: 20px 100px;
+    border-radius: 10px;
+    background-color: #f67e7d;
+    color: #0b032d;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: absolute;
+    right: 50%;
+    text-decoration: none;
+
+}
+
+.button-place a:hover {
+
+    padding: 20px 100px;
+    border-radius: 10px;
+    background-color: #ffb997;
+    color: #0b032d;
+    transition: background-color 2s;
+}
+
+@media screen and (max-width: 1399px) {
+
+    .text {
+        margin-left: 170px;
+        font-size: 40px;
+    }
+
+    .textabout {
+        position: absolute;
+        right: 20%;
+    }
+
+}
+
+@media screen and (max-width: 1908px) {
+
+    .text {
+        margin-left: 170px;
+        font-size: 50px;
+    }
+
+    .textabout p {
+        position: absolute;
+        left: 29%;
+    }
+
+    .button-place a {
+
+        position: absolute;
+        right: 56%;
+
+    }
+}
+
+footer {
+    margin-top: 450px;
+
+}
+
+@media screen and (max-width: 490px) {
+
+    .text {
+        margin-left: 0px;
+        font-size: 23px;
+    }
+
+    .textabout p {
+        position: absolute;
+        left: 3%;
+        font-size: 15px;
+    }
+
+    .button-place a {
+        margin-top: 60px;
+        position: absolute;
+        right: 25%;
+
+    }
+}
+
